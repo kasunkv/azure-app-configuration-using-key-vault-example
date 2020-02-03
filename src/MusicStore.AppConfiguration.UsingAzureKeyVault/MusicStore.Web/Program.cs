@@ -43,10 +43,10 @@ namespace MusicStore.Web
                                 })
 
                                 // Setup offline cache
-                                .SetOfflineCache(new OfflineFileCache())
+                                //.SetOfflineCache(new OfflineFileCache())
 
                                 // Configure custom offline cache implementation
-                                //.SetOfflineCache(new LocalFileOfflineCache(context.HostingEnvironment))
+                                .SetOfflineCache(new LocalFileOfflineCache(context.HostingEnvironment))
 
                                 // Configure Azure Key Vault with Managed Identity
                                 .ConfigureKeyVault(vaultOpt =>
