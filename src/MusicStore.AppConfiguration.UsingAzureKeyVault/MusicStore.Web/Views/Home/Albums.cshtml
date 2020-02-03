@@ -1,0 +1,23 @@
+﻿@model List<Album>
+@{
+    ViewData["Title"] = "Albums";
+}
+
+<h1>Albums</h1>
+
+<div class="text-center">
+    <div class="row" style="margin-top: 40px">
+        @foreach (var album in Model)
+        {
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="@album.AlbumArt" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">@album.Artist - @album.Name</h4>
+                        <a href="#" class="btn btn-primary">Buy $@album.Price</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

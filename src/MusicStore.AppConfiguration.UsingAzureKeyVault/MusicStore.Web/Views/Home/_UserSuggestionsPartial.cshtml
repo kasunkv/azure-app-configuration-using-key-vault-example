@@ -1,0 +1,19 @@
+﻿@model List<Album>
+
+<div class="row" style="margin-top: 50px">
+    <h2>You may also like</h2>
+    <div class="row">
+        @foreach (var album in Model)
+        {
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="@album.AlbumArt" alt="@album.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">@album.Artist - @album.Name</h5>
+                        <a href="#" class="btn btn-primary">Buy $@album.Price</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

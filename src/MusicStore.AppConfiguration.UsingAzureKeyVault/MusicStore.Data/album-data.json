@@ -1,0 +1,74 @@
+[
+  {
+    "Name": "Cage to Rattle",
+    "Artist": "Daughtry",
+    "Price": 14.00,
+    "AlbumArt": "/img/dug-1.jpg"
+  },
+  {
+    "Name": "Break the Spell",
+    "Artist": "Daughtry",
+    "Price": 14.00,
+    "AlbumArt": "/img/dug-2.jpg"
+  },
+  {
+    "Name": "Baptized",
+    "Artist": "Daughtry",
+    "Price": 15.00,
+    "AlbumArt": "/img/dug-3.jpg"
+  },
+  {
+    "Name": "Daughtry",
+    "Artist": "Daughtry",
+    "Price": 12.00,
+    "AlbumArt": "/img/dug-4.jpg"
+  },
+  {
+    "Name": "The Revelations LP",
+    "Artist": "Eminem",
+    "Price": 15.00,
+    "AlbumArt": "/img/em-1.jpg"
+  },
+  {
+    "Name": "The Eminem Show",
+    "Artist": "Eminem",
+    "Price": 15.00,
+    "AlbumArt": "/img/em-2.jpg"
+  },
+  {
+    "Name": "The Marshall Mathers",
+    "Artist": "Eminem",
+    "Price": 10.00,
+    "AlbumArt": "/img/em-3.jpg"
+  },
+  {
+    "Name": "Venom",
+    "Artist": "Eminem",
+    "Price": 12.00,
+    "AlbumArt": "/img/em-4.jpg"
+  },
+  {
+    "Name": "The Gratest Hits",
+    "Artist": "Eminem",
+    "Price": 18.00,
+    "AlbumArt": "/img/em-5.jpg"
+  },
+  {
+    "Name": "Living Things",
+    "Artist": "Linkin Park",
+    "Price": 15.00,
+    "AlbumArt": "/img/lp-1.jpg"
+  },
+  {
+    "Name": "Minutes to Midnight",
+    "Artist": "Linkin Park",
+    "Price": 12.00,
+    "AlbumArt": "/img/lp-2.jpg"
+  },
+  {
+    "Name": "Recharged",
+    "Artist": "Linkin Park",
+    "Price": 15.00,
+    "AlbumArt": "/img/lp-3.jpg"
+  }
+]

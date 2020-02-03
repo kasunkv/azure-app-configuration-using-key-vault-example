@@ -1,0 +1,11 @@
+﻿@using MusicStore.Web
+@using MusicStore.Web.Models
+@using MusicStore.Shared.Models
+@using MusicStore.Shared.FeatureManagement
+@using Microsoft.Extensions.Options
+@using MusicStore.Shared
+
+@inject IOptionsSnapshot<AppSettings> Settings
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Microsoft.FeatureManagement.AspNetCore

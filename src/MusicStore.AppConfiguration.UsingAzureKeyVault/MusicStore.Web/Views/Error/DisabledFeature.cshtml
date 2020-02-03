@@ -1,0 +1,13 @@
+﻿@model DisabledFeatureViewModel
+@{
+    ViewData["Title"] = "Feature Disabled";
+}
+<div class="text-center">
+    <div class="row">
+        <img class="col-md-8 offset-2 img-fluid" src="~/img/feature_disabled.png" alt="feature disavled" />
+    </div>
+    <div class="text-center">
+        <p class="lead "><b>@Model.FeatureName</b> feature you are trying to access is disabled. Planned date for @Model.FeatureName feature to come online is on <b>@Model.GoLiveDate.ToLocalTime()</b>.</p>
+        <p class="lead text-center">For additional information contact us at <a href="#">support@musicstore.tk</a></p>
+    </div>
+</div>

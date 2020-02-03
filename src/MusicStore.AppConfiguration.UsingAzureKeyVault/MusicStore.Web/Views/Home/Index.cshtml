@@ -1,0 +1,39 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <feature name="@Features.PromotionDiscounts" negate="true"><h1 class="display-4">Enjoy the latest music from your favorite artist</h1></feature>
+    <feature name="@Features.PromotionDiscounts"><h1 class="display-4">Enjoy @(Settings.Value.Discount.Amount * 100)% off for selected albums from your favorite artist</h1></feature>
+    <div class="row" style="margin-top: 50px">
+        <h2>Featured albums</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <img class="card-img-top" src="@Model.Featured[0].AlbumArt" alt="Card image cap">
+                <div class="card-body">
+                    <h2 class="card-title">@Model.Featured[0].Artist - @Model.Featured[0].Name</h2>
+                    <a href="#" class="btn btn-primary">Buy $@Model.Featured[0].Price</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                @for (int i = 1; i < 5; i++)
+                {
+                    <div class="col-md-6">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="@Model.Featured[i].AlbumArt" alt="@Model.Featured[i].Name">
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <feature name="@Features.UserSuggestions">
+        <partial name="_UserSuggestionsPartial" model="@Model.Suggestions" />
+    </feature>
+</div>
